@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="https://cabcapital-recursos.s3.amazonaws.com/photo_profile/649dfb66aea8d051b60e95c6.jpg" alt="profile picture" style="width: 45px; height: 45px; object-fit: contain; margin-right: 10px; border-radius: 50%;">
+            <h2>María Lopez</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Inicio/inicio.html" class="selected">Inicio</a></li>
+                <li><a href="../Crear_examen/crear_examen.html">Crear examen</a></li>
+                <li><a href="../Asignar_examen/asignar_examen.html">Asignar examen</a></li>
+                <li><a href="../Grupo/grupo.html" >Grupos</a></li>
+                <li><a href="../Login/login.html">Salir</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>¡Bienvenida! María Lopez.</h1>
+        <div class="charts">
+            <div class="chart">
+                <h2>Examenes por tema</h2>
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Examenes por grupo</h2>
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Examenes presentados por curso</h2>
+                <canvas id="chart3"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script_inicio.js"></script>
+</body>
+</html>

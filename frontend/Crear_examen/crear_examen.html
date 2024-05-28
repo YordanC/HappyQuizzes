@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="https://cabcapital-recursos.s3.amazonaws.com/photo_profile/649dfb66aea8d051b60e95c6.jpg" alt="profile picture" style="width: 45px; height: 45px; object-fit: contain; margin-right: 10px; border-radius: 50%;">
+                <h2>María Lopez</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Inicio/inicio.html">Inicio</a></li>
+                    <li><a href="../Crear_examen/crear_examen.html" class="selected">Crear examen</a></li>
+                    <li><a href="../Asignar_examen/asignar_examen.html">Asignar examen</a></li>
+                    <li><a href="../Grupo/grupo.html">Grupos</a></li>
+                    <li><a href="../Login/login.html">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main-content">
+            <h1>Crear examen</h1>
+            <form id="create-exam-form">
+                <div class="form-group label-input-group">
+                    <div class="form-group">
+                        <label for="tema">Tema</label>
+                        <input type="text" id="tema" name="tema" placeholder="Escriba aquí...">
+                    </div>
+                    <div class="form-group">
+                        <label for="grupo">Seleccionar grupo</label>
+                        <select id="grupo" name="grupo">
+                            <option value="">Seleccionar grupo...</option>
+                            <!-- Opciones de grupo -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group label-input-group">
+                    <div class="form-group">
+                        <label for="porcentaje">Seleccionar % examen</label>
+                        <select id="porcentaje" name="porcentaje">
+                            <option value="">Seleccionar % examen</option>
+                            <!-- Opciones de porcentaje -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora-publicacion">Hora de publicación</label>
+                        <input type="time" id="hora-publicacion" name="hora-publicacion">
+                    </div>
+                </div>
+                <div class="form-group label-input-group">
+                    <div class="form-group">
+                        <label for="fecha-publicacion">Fecha de publicación</label>
+                        <input type="date" id="fecha-publicacion" name="fecha-publicacion">
+                    </div>
+                    <div class="form-group">
+                        <label for="tiempo-limite">Tiempo límite</label>
+                        <input type="time" id="tiempo-limite" name="tiempo-limite">
+                    </div>
+                </div>
+                <div class="form-group buscar-pregunta-group">
+                    <label for="buscar-pregunta">Buscar en la biblioteca de preguntas</label>
+                    <div class="buscar-pregunta-input">
+                        <input type="text" id="buscar-pregunta" name="buscar-pregunta" placeholder="Buscar pregunta">
+                        <button type="button">Añadir</button>
+                    </div>
+                    <a href="#" class="ver-todas-preguntas">Ver todas las preguntas</a>
+                </div>
+                <div class="pregunta">
+                    <h2>Pregunta 1</h2>
+                    <p>¿Cuál es el impacto ambiental de la industria de la moda rápida en comparación con la moda sostenible?</p>
+                    <ol>
+                        <li>La moda rápida genera una mayor cantidad de residuos textiles en comparación con la moda sostenible.</li>
+                        <li>La moda sostenib

@@ -1,0 +1,122 @@
+:root {
+    --color-primario: #16202a;
+    --color-terciario: #1b2735;
+    --color-exitoso: #26C485;
+    --color-luz: #FBFBFB;
+    --color-secundario: #1B8BC2;
+    --color-hover: #A3ADBB;
+    --color-claro: #F4F6F6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: var(--color-terciario);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--color-primario);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .profile {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    /* 
+    * MARGEN PARA ALINEAR EL TEXTO CON LA IMAGEN (EN EL MENU)
+    */
+    margin: 15px 0;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: calc(100% - 20px); /* Ajustar el ancho para evitar solapamiento */
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px 10px; /* Añadir padding a ambos lados */
+    transition: background-color 0.3s, transform 0.3s; /* Añadir transición para el transform */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: var(--color-hover);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+.main-content h1 {
+    color: var(--color-primario);
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--Light, #FBFBFB);
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*Para dar diseño a las gráficas*/
+.chart {
+    flex: 1;
+    min-width: 150px;
+    background-color: var(--color-luz);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--color-primario);
+}
+
+.chart canvas {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar nav ul li a.selected {
+    background-color: var(--color-hover);
+    color: #16202a; /* Color del texto */
+}

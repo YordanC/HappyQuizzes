@@ -1,0 +1,287 @@
+:root {
+    --color-primario: #16202a;
+    --color-terciario: #1b2735;
+    --color-exitoso: #26C485;
+    --color-luz: #FBFBFB;
+    --color-secundario: #1B8BC2;
+    --color-hover: #A3ADBB;
+    --color-claro: #F4F6F6;
+    --color-inactivo: #E74C3C;
+    --color-busqueda: #ececec;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: var(--color-terciario);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--color-primario);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: var(--color-hover);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    color: var(--color-luz);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: var(--color-primario);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.form-field {
+    flex: 1 1 calc(50% - 10px);
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.form-container label {
+    color: var(--color-luz);
+    margin-bottom: 5px;
+    display: block;
+    }
+
+.form-container input,
+.form-container select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 37px;
+}
+
+.exam-library {
+    background-color: var(--color-busqueda);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.exam-library h2 {
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.search-bar .search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar .search-button i {
+    font-size: 16px;
+}
+
+.search-bar .add-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.search-bar .search-button:hover,
+.search-bar .add-button:hover {
+    background-color: var(--color-hover);
+}
+
+.exam-list {
+    margin-top: 20px;
+}
+
+.exam-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-claro);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.exam-icon {
+    margin-right: 10px;
+}
+
+.exam-icon i {
+    font-size: 24px;
+    color: var(--color-primario);
+}
+
+.exam-details {
+    flex: 1;
+}
+
+.exam-details h3 {
+    margin: 0;
+    color: var(--color-primario);
+}
+
+.exam-details p {
+    margin: 5px 0;
+    color: var(--color-primario);
+}
+
+.exam-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.exam-actions .edit-button,
+.exam-actions .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.exam-actions i {
+    font-size: 20px;
+    color: var(--color-primario);
+}
+
+.assign-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.assign-button:hover {
+    background-color: var(--color-hover);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: var(--color-secundario);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button.active,
+.pagination button:hover {
+    background-color: var(--color-hover);
+}
+
+.sidebar nav ul li a.selected {
+    background-color: var(--color-hover);
+    color: #16202a; /* Color del texto */
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar examen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="https://cabcapital-recursos.s3.amazonaws.com/photo_profile/649dfb66aea8d051b60e95c6.jpg" alt="profile picture">
+            <h2>María Lopez</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Inicio/inicio.html">Inicio</a></li>
+                <li><a href="../Crear_examen/crear_examen.html">Crear examen</a></li>
+                <li><a href="../Asignar_examen/asignar_examen.html" class="selected">Asignar examen</a></li>
+                <li><a href="../Grupo/grupo.html">Grupos</a></li>
+                <li><a href="../Login/login.html">Salir</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Asignar examen</h1>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="grupo">Seleccionar grupo</label>
+                        <select id="grupo">
+                            <option value="">Seleccionar grupo...</option>
+                            <!-- Opciones de grupos -->
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="porcentaje">Seleccionar % examen</label>
+                        <select id="porcentaje">
+                            <option value="">Seleccionar % examen...</option>
+                            <!-- Opciones de porcentaje -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="hora-publicacion">Hora de publicación</label>
+                        <input type="time" id="hora-publicacion">
+                    </div>
+                    <div class="form-field">
+                        <label for="fecha-publicacion">Fecha de publicación</label>
+                        <input type="date" id="fecha-publicacion">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="tiempo-limite">Tiempo límite</label>
+                        <input type="time" id="tiempo-limite">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="exam-library">
+            <h2>Asignar examen</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar examen">
+                <button type="button" class="search-button"><i class="fas fa-search"></i></button>
+                <button type="button" class="add-button">Añadir</button>
+            </div>
+            <div class="exam-list">
+                <!-- Lista de exámenes -->
+                <div class="exam-item">
+                    <div class="exam-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="exam-details">
+                        <h3>Prueba</h3>
+                        <p># preguntas</p>
+                        <p>Tema</p>
+                        <p>María Lopez</p>
+                    </div>
+                    <div class="exam-actions">
+                        <button type="button" class="edit-button"><i class="fas fa-edit"></i></button>
+                        <button type="button" class="delete-button"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <button class="assign-button" type="button">+ Asignar</button>
+                </div>
+                <!-- Repetir .exam-item para cada examen -->
+            </div>
+            <div class="pagination">
+                <button type="button">&laquo;</button>
+                <button type="button" class="active">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button">4</button>
+                <button type="button">&raquo;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

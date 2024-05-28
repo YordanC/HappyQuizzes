@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="https://cabcapital-recursos.s3.amazonaws.com/photo_profile/649dfb66aea8d051b60e95c6.jpg" alt="profile picture">
+            <h2>María Lopez</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Inicio/inicio.html">Inicio</a></li>
+                <li><a href="../Crear_examen/crear_examen.html">Crear examen</a></li>
+                <li><a href="../Asignar_examen/asignar_examen.html">Asignar examen</a></li>
+                <li><a href="../Grupo/grupo.html" class="selected">Grupos</a></li>
+                <li><a href="../Login/login.html">Salir</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Grupos</h1>
+        <div class="table-container">
+            <div class="search-filter">
+                <input type="text" id="search-input" placeholder="Buscar por nombre">
+                <button id="search-button">Filtro</button>
+            </div>
+            <table id="grupo-table">
+                <thead>
+                    <tr>
+                        <th>ID Grupo</th>
+                        <th>Nombre Grupo</th>
+                        <th>Estado</th>
+                        <th></th> <!-- Columna para el enlace "Ver más" -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán dinámicamente los grupos desde JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script_grupo.js"></script>
+</body>
+</html>

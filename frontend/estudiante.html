@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estudiantes</h1>
+    
+    <!-- Formulario para crear un estudiante -->
+    <form id="formulario-estudiante">
+        <label for="id_documento">ID Documento:</label>
+        <input type="text" id="id_documento" name="id_documento" required>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+        <br>
+        <button type="submit">Crear Estudiante</button>
+    </form>
+
+    <!-- Tabla para mostrar la información de los estudiantes -->
+    <table id="tabla-estudiantes">
+        <thead>
+            <tr>
+                <th>ID Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Estado</th>
+                <th>Acciones</th> <!-- Nueva columna para botones de acciones -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se cargarán dinámicamente los datos de los estudiantes usando JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

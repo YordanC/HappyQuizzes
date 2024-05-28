@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Grupo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Grupo</h1>
+        <form id="create-group-form">
+            <div class="form-group">
+                <label for="nombre-grupo">Nombre del Grupo:</label>
+                <input type="text" id="nombre-grupo" name="nombre-grupo" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+            <button type="submit">Crear Grupo</button>
+        </form>
+        
+        <h2>Lista de Grupos</h2>
+        <table id="grupo-table">
+            <thead>
+                <tr>
+                    <th>ID Grupo</th>
+                    <th>Nombre del Grupo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se cargarán los grupos -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

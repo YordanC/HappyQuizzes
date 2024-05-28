@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Examen</h1>
+        <form id="create-exam-form">
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" required>
+            </div>
+            <div class="form-group">
+                <label for="porcentaje_examen">Porcentaje Examen:</label>
+                <input type="number" id="porcentaje_examen" name="porcentaje_examen" required>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria" required>
+            </div>
+            <div class="form-group">
+                <label for="nota_examen">Nota Examen:</label>
+                <input type="number" id="nota_examen" name="nota_examen" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad_preguntas">Cantidad de Preguntas:</label>
+                <input type="number" id="cantidad_preguntas" name="cantidad_preguntas" required>
+            </div>
+            <div class="form-group">
+                <label for="tiempo">Tiempo:</label>
+                <input type="time" id="tiempo" name="tiempo" required>
+            </div>
+            <div class="form-group">
+                <label for="tiempo_finalizacion">Tiempo de Finalización:</label>
+                <input type="time" id="tiempo_finalizacion" name="tiempo_finalizacion" required>
+            </div>
+            <div class="form-group">
+                <label for="porcentaje_correctas">Porcentaje Correctas:</label>
+                <input type="number" id="porcentaje_correctas" name="porcentaje_correctas" required>
+            </div>
+            <div class="form-group">
+                <label for="porcentaje_incorrectas">Porcentaje Incorrectas:</label>
+                <input type="number" id="porcentaje_incorrectas" name="porcentaje_incorrectas" required>
+            </div>
+            <div class="form-group">
+                <label for="horario_id_horario">Horario ID:</label>
+                <input type="number" id="horario_id_horario" name="horario_id_horario" required>
+            </div>
+            <button type="submit">Crear Examen</button>
+        </form>
+
+        <h2>Lista de Exámenes</h2>
+        <table id="examen-table">
+            <thead>
+                <tr>
+                    <th>ID Examen</th>
+                    <th>Descripción</th>
+                    <th>Porcentaje Examen</th>
+                    <th>Categoría</th>
+                    <th>Nota Examen</th>
+                    <th>Cantidad de Preguntas</th>
+                    <th>Tiempo</th>
+                    <th>Tiempo de Finalización</th>
+                    <th>Porcentaje Correctas</th>
+                    <th>Porcentaje Incorrectas</th>
+                    <th>Horario ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se cargarán los exámenes -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

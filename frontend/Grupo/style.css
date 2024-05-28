@@ -1,0 +1,209 @@
+:root {
+    --color-primario: #16202a;
+    --color-terciario: #1b2735;
+    --color-exitoso: #26C485;
+    --color-luz: #FBFBFB;
+    --color-secundario: #1B8BC2;
+    --color-hover: #A3ADBB;
+    --color-claro: #F4F6F6;
+    --color-inactivo: #E74C3C;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: var(--color-terciario);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--color-primario);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: var(--color-hover);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content h1, .main-content h2 {
+    color: var(--color-luz);
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.table-container {
+    background-color: var(--color-primario);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-filter input {
+    padding:10px;
+    width: calc(100% - 80px);
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.search-filter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-filter button:hover {
+    background-color: var(--color-hover);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-terciario);
+    color: var(--color-luz);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-claro);
+}
+
+table th {
+    background-color: var(--color-terciario);
+    color: var(--color-luz);
+}
+
+table tr:hover {
+    background-color: var(--color-hover);
+}
+
+table .estado.activo {
+    color: var(--color-exitoso);
+}
+
+table .estado.inactivo {
+    color: var(--color-inactivo);
+}
+
+table a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionales */
+table th, table td {
+    color: var(--color-luz); /* Cambia el color del texto a blanco */
+}
+
+table th {
+    background-color: var(--color-terciario); /* Fondo del encabezado oscuro */
+    color: var(--color-luz); /* Texto del encabezado blanco */
+}
+/* Otros estilos existentes */
+
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-icon {
+    font-size: 24px;
+    color: var(--color-luz);
+    cursor: pointer;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.back-icon:hover {
+    color: var(--color-hover);
+}
+
+.sidebar nav ul li a.selected {
+    background-color: var(--color-hover);
+    color: #16202a; /* Color del texto */
+}

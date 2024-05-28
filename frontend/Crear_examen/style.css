@@ -1,0 +1,230 @@
+:root {
+    --color-primario: #16202a;
+    --color-terciario: #1b2735;
+    --color-exitoso: #26C485;
+    --color-luz: #FBFBFB;
+    --color-secundario: #1B8BC2;
+    --color-hover: #A3ADBB;
+    --color-claro: #F4F6F6;
+    --color-inactivo: #E74C3C;
+    --color-busqueda: #ececec;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b2735;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #16202a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .profile {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: calc(100% - 20px); /* Ajustar el ancho para evitar solapamiento */
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px 10px; /* Añadir padding a ambos lados */
+    transition: background-color 0.3s, transform 0.3s; /* Añadir transición para el transform */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #A3ADBB;
+    transform: scale(1.05); /* Añadir transformación en hover */
+}
+
+.sidebar nav ul li a.active {
+    color: #00aaff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-group.label-input-group {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-group.label-input-group .form-group {
+    width: 48%; /* Ajusta el ancho de los inputs para que se ajusten en la misma línea */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;  /* El ancho debe ser 100% del contenedor para usar todo el espacio disponible */
+    height: 40px;  /* Establece la altura de los inputs y selects */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no incremente el tamaño total */
+}
+
+.buscar-pregunta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear al inicio del contenedor */
+}
+
+.buscar-pregunta-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.buscar-pregunta-input input {
+    flex: 1; /* Tomar todo el espacio disponible */
+    margin-right: 20px; /* Espacio entre el input y el botón */
+}
+
+.buscar-pregunta-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00aaff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buscar-pregunta-input button:hover {
+    opacity: 0.8;
+    background-color: #0077cc;
+    transform: scale(1.05);
+}
+
+.ver-todas-preguntas {
+    align-self: flex-end; /* Alinear el enlace al final del contenedor */
+    margin-top: 10px;
+    margin-inline: 130px;
+    color: #00aaff; /* Color del enlace */
+    text-decoration: none;
+}
+
+.ver-todas-preguntas:hover {
+    text-decoration: underline;
+}
+
+.pregunta {
+    background-color: #2a3b4c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.buscar-pregunta-group {
+    background-color: #2a3b4c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.pregunta h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pregunta p {
+    margin-bottom: 10px;
+}
+
+.pregunta ol {
+    padding-left: 20px;
+}
+
+.pregunta ol li {
+    margin-bottom: 10px;
+}
+
+button[type="submit"], button[type="button"] {
+    padding: 10px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #00aaff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="button"] {
+    background-color: #ccc;
+    color: #000;
+}
+
+button[type="button"]:hover, button[type="submit"]:hover {
+    opacity: 0.8;
+    background-color: #0077cc;
+    transform: scale(1.05);
+}
+
+.sidebar nav ul li a.selected {
+    background-color: var(--color-hover);
+    color: #16202a; /* Color del texto */
+}
+
+.sidebar nav ul li a.selected {
+    background-color: var(--color-hover);
+    color: #16202a; /* Color del texto */
+}
